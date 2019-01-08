@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import { Animated } from 'react-native';
 import { PropTypes } from 'prop-types';
-import { Animated  } from 'react-native';
 
 class HideableView extends Component {
   constructor(props) {
@@ -36,7 +36,7 @@ class HideableView extends Component {
     }
 
     return (
-      <Animated.View style={[this.props.style, {opacity: this.state.opacity}]}>
+      <Animated.View style={[this.props.style, { opacity: this.state.opacity }]}>
         {this.props.children}
       </Animated.View>
     )
